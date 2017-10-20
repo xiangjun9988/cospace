@@ -1,0 +1,240 @@
+/*create by vincent wang*/
+
+.g-dialog {
+    position: fixed;
+    _position: absolute;
+    width: 480px;
+    height: 220px;
+    padding-bottom: 45px;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.g-dialog .g-dl-title {
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    text-indent: 25px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ededed;
+    border-radius: 4px 4px 0 0;
+}
+
+.g-dialog .g-dl-close {
+    display: block;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: 0 0 no-repeat;background-position: 0 0;
+    cursor: pointer;
+}
+
+.g-dialog .g-dl-close:hover {
+    background: 0 0 no-repeat;background-position: 0 -33px;
+}
+
+.g-dialog .g-dl-body {
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+    text-align: center;
+    line-height: 30px;
+    padding: 40px 35px 35px 35px;
+    position: relative;
+}
+
+.g-dialog .g-dl-footer {
+    width: 100%;
+    text-align: center;
+    height: 37px;
+}
+
+.g-dialog .g-dl-footer a {
+    display: inline-block;
+    width: 138px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #4b91e9;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 14px;
+}
+
+.g-dialog .g-dl-footer a.btn-cancel {
+    border: 1px solid #4791ff;
+    color: #4095ff;
+}
+
+.g-dialog .g-dl-footer a.btn-cancel:hover {
+    background: #fff;
+    border: 1px solid #7fb2ff;
+    color: #4791ff;
+}
+.g-dialog .g-dl-footer a.btn-cancel:active{
+    color: #4791ff;
+    background: #b2bacd;
+    border: 1px solid #326ecd;
+}
+
+.g-dialog .g-dl-footer a.btn-confirm {
+    border: 1px solid #4b91e9;
+    background: #4b91e9;
+    color: #fff;
+}
+
+.g-dialog .g-dl-footer a.btn-confirm:hover {
+    background: #7ab5ff;
+    border: 1px solid #7ab5ff;
+}
+
+.g-dialog .g-dl-footer a.btn-confirm:active {
+    background: #2d70cd;
+    border: 1px solid #2d70cd;
+}
+
+.g-dialog-mask {
+    position: fixed;
+    _position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=30);
+    opacity: .3;
+}
+
+/* ==========================================================================
+   Dialog Style1
+   ========================================================================== */
+body .g-dialog-other{
+    width: 478px;
+    border: 1px solid #ededed;
+}
+body .g-dialog-other .g-dl-title{
+    text-indent: 20px;
+}
+.g-dl-body.s1 {
+    text-align: left;
+    padding: 13px 40px 24px 40px;
+}
+
+.g-dl-body.s1 .title {
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    color: #333;
+    text-indent: 0;
+}
+
+.g-dl-body.s1 .row {
+    position: relative;
+    padding: 0 0 0 25px;
+    line-height: 26px;
+}
+
+.g-dl-body.s1 .row1 {
+    position: relative;
+    padding: 0 0 0 133px;
+}
+
+.g-dl-body.s1 .row1 .agreement {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+}
+
+.g-dl-body.s1 .row1 a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+    line-height: 24px;
+}
+.g-dl-body.s1 .row1 a:hover{
+    text-decoration: underline;
+}
+.g-dl-body.s1 .ico {
+    display: inline-block;
+}
+
+.g-dl-body.s1 .ico_chk {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    background: url(../img/icon_unselected.png) center no-repeat;
+    cursor: pointer;
+}
+
+.g-dl-body.s1 .row .ico_chk{
+    top: 6px;
+}
+
+.g-dl-body.s1 .ico_chk.on {
+    background: url(../img/icon_selected.png) center no-repeat;
+}
+
+.g-dl-body.s1 .row .ico_chk.on{
+    top: 6px;
+}
+#pd_place_order_dialog .place_order_button_disabled{
+    background-color: #eeeeee;
+    color: #999999;
+    border: 1px solid #eeeeee;
+    cursor: default;
+}
+
+/*----------------------����loading-------------------------*/
+.common_request_mask{
+    position: fixed;
+    _position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=30);
+    opacity: .3;
+    z-index: 9999;
+    /*display: none;*/
+}
+.common_request_loading{
+    position: fixed;
+    _position: absolute;
+    left: 50%;
+    margin: -15px 0 0 -82px;
+    top: 50%;
+    font-size: 16px;
+    color: white;
+    height: 30px;
+    width: 120px;
+    padding-left: 45px;
+    line-height: 30px;
+    text-align: left;
+    z-index: 10000;
+}
+.common_request_loading:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: 0 0 no-repeat;background-position: 0 -66px;
+}
+
+/* ../images/common/dialog.png */
+.g-dialog .g-dl-close,
+.g-dialog .g-dl-close:hover,
+.common_request_loading:before{
+background-image: url(../img/close.png);
+}
